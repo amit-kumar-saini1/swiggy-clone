@@ -18,19 +18,19 @@ const foodItems = [
         image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Cake.png"
     },
     {
-        id: 2,
-        name: "Dosa",
-        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Dosa.png"
-    },,
+        id: 4,
+        name: "Pizza",
+        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Pizza.png"
+    },
     {
-        id: 2,
-        name: "Dosa",
-        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Dosa.png"
-    },,
+        id: 5,
+        name: "Biryani",
+        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani_2.png"
+    },
     {
-        id: 2,
-        name: "Dosa",
-        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Dosa.png"
+        id: 6,
+        name: "Noodles",
+        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Noodles.png"
     },
 ];
 
@@ -52,11 +52,8 @@ function Foodshow(){
             </div>
             <div className="flex gap-4 mt-6">
                 {foodItems.map((item) => (
-                    <div>
-                    <a key={item.id} href="#">
-                        <img className="w-36 h-45" src={item.image} alt={item.name} />
-                    </a>
-                    <a key={item.id} href="#">
+                    <div key={item.id}>
+                    <a href="#">
                         <img className="w-36 h-45" src={item.image} alt={item.name} />
                     </a>
                     </div>

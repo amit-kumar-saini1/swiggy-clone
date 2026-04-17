@@ -2,7 +2,12 @@ import Header from "../component/Header";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Foodshow from "../component/Foodshow";
+import Footer from "../component/Footer";
+import Fasality from "../component/Fasality";
+import Restaurants from "../component/Restaurants";
 
+const photo = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png";
 
 function Home() {
     const foodImages = [
@@ -24,8 +29,9 @@ function Home() {
     ];
 
     return (
+        <>
         <div className="bg-orange-500 h-fit  ">
-            <Header />
+            <Header photo={photo} color="text-[#ffffff]" />
             <div className="flex flex-col items-center relative">
                 <div className="flex justify-center items-center px-4">
                     <p className="text-[48px] text-white text-center leading-tight font-semibold mt-15 mb-5">
@@ -62,6 +68,11 @@ function Home() {
                 </div>
             </div>
         </div>
+        <Foodshow/>
+      <Restaurants/>
+      <Fasality/>   
+      <Footer/>
+        </>
     );
 }
 

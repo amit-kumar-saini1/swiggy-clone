@@ -1,17 +1,16 @@
-import Foodshow from "./component/Foodshow"
-import Footer from "./component/Footer"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home"
-import Restaurants from "./component/Restaurants"
-import Fasality from "./component/Fasality"
+import About from "./pages/About"
+
+
 const App = () => {
   return (
-    <div>
-      <Home/>
-      <Foodshow/>
-      <Restaurants/>
-      <Fasality/>   
-      <Footer/>   
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
