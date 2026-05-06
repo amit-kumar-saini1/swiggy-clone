@@ -25,7 +25,7 @@ const foodItems = [
     {
         id: 5,
         name: "Biryani",
-        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani_2.png"
+        image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/PC_Mweb/Biryani.png"
     },
     {
         id: 6,
