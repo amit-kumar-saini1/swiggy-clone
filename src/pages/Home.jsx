@@ -69,6 +69,7 @@ function Home() {
             </div>
         </div>
         <Foodshow/>
+        <Foodshow/>
       <Restaurants/>
       <Fasality/>   
       <Footer/>
